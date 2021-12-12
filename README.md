@@ -1,4 +1,4 @@
-# Async, Generic version of Repository Pattern
+# Repository Pattern: Simple, Asynchronous and Generic
 I wrote it for myself but who knows where it would appear...
 
 ## Benefits
@@ -6,6 +6,7 @@ I wrote it for myself but who knows where it would appear...
 2. Generic (*T* - that's your stuff)
 3. EF-connected (EF5)
 4. Server-size pagination enabled
+5. Usage explanation through tests
 
 ## Usage || restrictions
 ``git clone`` | Ctrl+C => Ctrl+V

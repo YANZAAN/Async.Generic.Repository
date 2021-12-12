@@ -12,10 +12,11 @@ using GenericRepository.Logic;
 namespace GenericRepository.Application.Implementation
 {
     /// <summary>
-    /// <para>Asynchronous Repository Pattern Implementation</para>
-    /// <para>Source: </para>
+    /// <para>Asynchronous Generic Repository Implementation</para>
+    /// <para>Author: YANZAAN</para>
+    /// <para>Source: https://github.com/YANZAAN/Async.Generic.Repository.git</para>
     /// </summary>
-    /// <typeparam name="T">Element type<</typeparam>
+    /// <typeparam name="T">Element type</typeparam>
     public class Repository<T> : IRepository<T> where T : class
     {
         /// <summary>

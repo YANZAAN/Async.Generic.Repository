@@ -8,12 +8,16 @@ I wrote it for myself but who knows where it would appear...
 4. Server-size pagination enabled
 5. Usage explanation through tests
 
-## Usage || restrictions
+## Usage and restrictions
 ``git clone`` | Ctrl+C => Ctrl+V
   
-No restriction for you. Take it, modify, use!
+No restrictions for you. Take it, modify, use!
   
 *Just set reference to this Github page, please*
+
+## Repository files
+1. Interface: ``GenericRepository/Application/Interfaces/IRepository.cs``
+2. Implementation: ``GenericRepository/Application/Implementations/Repository.cs``
 
 ## Test
 Run ``dotnet test``
@@ -25,4 +29,4 @@ Run ``docker build -t yanzaan/net5repositorytest . & docker run -it yanzaan/net5
 Run ``docker-compose up --build yanzaan/net5repositorytest``
 
 ## Contribute
-Forks? Pulls (if I won't die from coronavirus infection)? You're welcome
+Forks? Pulls (if I won't die from coronavirus infection)? You're welcome!

@@ -16,7 +16,13 @@ No restriction for you. Take it, modify, use!
 *Just set reference to this Github page, please*
 
 ## Test
-Run: ``dotnet test``
+Run ``dotnet test``
+
+### ...with Docker:
+Run ``docker build -t yanzaan/net5repositorytest . & docker run -it yanzaan/net5repositorytest``
+
+### ...with Docker-Compose:
+Run ``docker-compose up --build yanzaan/net5repositorytest``
 
 ## Contribute
 Forks? Pulls (if I won't die from coronavirus infection)? You're welcome

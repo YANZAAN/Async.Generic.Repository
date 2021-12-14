@@ -26,7 +26,7 @@ Run ``dotnet test``
 Run ``docker build -t yanzaan/net5repositorytest . & docker run -it yanzaan/net5repositorytest``
 
 ### ...with Docker-Compose:
-Run ``docker-compose up --build yanzaan/net5repositorytest``
+Run ``docker-compose up --build``
 
 ## Contribute
 Forks? Pulls (if I won't die from coronavirus infection)? You're welcome!

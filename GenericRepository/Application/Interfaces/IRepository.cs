@@ -11,7 +11,7 @@ namespace GenericRepository.Application.Interfaces
     /// <summary>
     /// <para>Interface for Asynchronous Generic Repository Pattern</para>
     /// <para>Author: YANZAAN</para>
-    /// <para>Source: https://github.com/YANZAAN/Async.Generic.Repository.git</para>
+    /// <para>Source: https://github.com/YANZAAN/net5-async-generic-repository.git</para>
     /// </summary>
     /// <typeparam name="T">Element type</typeparam>
     public interface IRepository<T> where T : class

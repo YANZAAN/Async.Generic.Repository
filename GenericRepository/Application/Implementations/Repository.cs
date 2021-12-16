@@ -59,7 +59,7 @@ namespace GenericRepository.Application.Implementation
             if (includeProperties.Length == 0)
                 return query;
 
-            return includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty)); // do it with strings (navPaths) ?
+            return includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
         }
         /// <summary>
         /// Filters dataset by specified specification
@@ -136,7 +136,6 @@ namespace GenericRepository.Application.Implementation
         /// unique to specific Repository implementation way
         /// </summary>
         /// <param name="array">Elements array</param>
-        /// <returns>Awaitable Task which represent update process</returns>
         private void _Update(IEnumerable<T> array)
         {
             Set.UpdateRange(array);
@@ -146,7 +145,6 @@ namespace GenericRepository.Application.Implementation
         /// unique to specific Repository implementation way
         /// </summary>
         /// <param name="array">Elements array</param>
-        /// <returns>Awaitable Task which represent remove process</returns>
         private void _Remove(IEnumerable<T> array)
         {
             Set.RemoveRange(array);

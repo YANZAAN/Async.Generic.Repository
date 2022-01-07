@@ -14,7 +14,8 @@ namespace GenericRepository.Application.Interfaces
     /// <para>Source: https://github.com/YANZAAN/net5-async-generic-repository.git</para>
     /// </summary>
     /// <typeparam name="T">Element type</typeparam>
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> : IDisposable
+        where T : class
     {
         /// <summary>
         /// Retrieves elements array specified by passed conditions and paginated

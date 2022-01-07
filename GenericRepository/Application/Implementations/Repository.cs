@@ -17,7 +17,8 @@ namespace GenericRepository.Application.Implementation
     /// <para>Source: https://github.com/YANZAAN/net5-async-generic-repository.git</para>
     /// </summary>
     /// <typeparam name="T">Element type</typeparam>
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T>
+        where T : class
     {
         /// <summary>
         /// Internal DbContext instance for changes manipulation
@@ -148,6 +149,27 @@ namespace GenericRepository.Application.Implementation
         private void _Remove(IEnumerable<T> array)
         {
             Set.RemoveRange(array);
+        }
+
+        private bool disposedValue;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    Context.Dispose();
+                }
+
+                disposedValue = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }

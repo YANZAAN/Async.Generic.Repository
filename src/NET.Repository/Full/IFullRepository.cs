@@ -25,9 +25,9 @@ namespace NET.Repository.Full
         /// <param name="orderBy">Order expression</param>
         /// <returns>Entity enumeration of T</returns>
         IEnumerable<T> Get(Specification<T> condition,
-            Expression<Func<T, object>>[] includeProperties,
             PaginationContext pageContext,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy);
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy,
+            params Expression<Func<T, object>>[] includeProperties);
         /// <summary>
         ///     Get single entity by specified parameters
         /// </summary>
@@ -35,7 +35,7 @@ namespace NET.Repository.Full
         /// <param name="includeProperties">Resolvers array to include additional tables</param>
         /// <returns>Entity of T if it's present; default otherwise</returns>
         T Find(Specification<T> condition,
-            Expression<Func<T, object>>[] includeProperties);
+            params Expression<Func<T, object>>[] includeProperties);
         /// <summary>
         ///     Insert new entity
         /// </summary>

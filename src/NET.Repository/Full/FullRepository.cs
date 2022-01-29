@@ -29,9 +29,9 @@ namespace NET.Repository.Full
         }
 
         public IEnumerable<T> Get(Specification<T> condition = default,
-            Expression<Func<T, object>>[] includeProperties = default,
             PaginationContext pageContext = default,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = default)
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = default,
+            params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> query = _set;
 
@@ -61,10 +61,10 @@ namespace NET.Repository.Full
             return query.ToList();
         }
 
-        public T Find(Specification<T> condition,
-            Expression<Func<T, object>>[] includeProperties)
+        public T Find(Specification<T> condition = default,
+            params Expression<Func<T, object>>[] includeProperties)
         {
-            var entities = Get(condition, includeProperties);
+            var entities = Get(condition, includeProperties: includeProperties);
 
             return entities.FirstOrDefault();
         }
@@ -77,6 +77,16 @@ namespace NET.Repository.Full
         public void Insert(IEnumerable<T> entitiesToInsert)
         {
             _set.AddRange(entitiesToInsert);
+        }
+
+        public void Update(T entityToUpdate)
+        {
+            _set.Update(entityToUpdate);
+        }
+
+        public void Update(IEnumerable<T> entitiesToUpdate)
+        {
+            _set.UpdateRange(entitiesToUpdate);
         }
 
         public void Delete(object id)
@@ -99,20 +109,6 @@ namespace NET.Repository.Full
             foreach (var entity in entitiesToDelete)
             {
                 Delete(entity);
-            }
-        }
-
-        public void Update(T entityToUpdate)
-        {
-            _set.Attach(entityToUpdate);
-            _context.Entry(entityToUpdate).State = EntityState.Modified;
-        }
-
-        public void Update(IEnumerable<T> entitiesToUpdate)
-        {
-            foreach (var entity in entitiesToUpdate)
-            {
-                Update(entity);
             }
         }
 

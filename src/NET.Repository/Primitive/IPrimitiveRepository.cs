@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace NET.Repository.Primitive
 {
-    public interface IPrimitiveRepository<T>
+    public interface IPrimitiveRepository<T> : IDisposable
         where T : class
     {
         IEnumerable<T> Get(Expression<Func<T, bool>> filter,

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-using NET.Repository.Helpers.Utility;
-using NET.Repository.Logic;
+using NET.Repository.Full.Utility;
+using NET.Repository.Full.Logic;
 
 namespace NET.Repository.Application.Interfaces
 {

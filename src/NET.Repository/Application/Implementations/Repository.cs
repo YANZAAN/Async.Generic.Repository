@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 using NET.Repository.Application.Interfaces;
-using NET.Repository.Helpers.Utility;
-using NET.Repository.Logic;
+using NET.Repository.Full.Utility;
+using NET.Repository.Full.Logic;
 
 namespace NET.Repository.Application.Implementation
 {

@@ -1,7 +1,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace NET.Repository.Logic {
+namespace NET.Repository.Full.Logic {
     /// <summary>
     /// <para>Specification Pattern Implementation</para>
     /// <para>Author: Vladimir Khorikov</para>

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace NET.Repository.Helpers.Utility
+namespace NET.Repository.Full.Utility
 {
     public class PaginationContext
     {

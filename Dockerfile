@@ -2,14 +2,14 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine AS build
 
 WORKDIR /app
 
-COPY ["GenericRepository/GenericRepository.csproj","./GenericRepository/"]
-COPY ["GenericRepository.Tests/GenericRepository.Tests.csproj","./GenericRepository.Tests/"]
+COPY ["src/NET.Repository/NET.Repository.csproj","./src/NET.Repository/"]
+COPY ["src/NET.Repository.Tests/NET.Repository.Tests.csproj","./src/NET.Repository.Tests/"]
 
-RUN dotnet restore "GenericRepository.Tests/GenericRepository.Tests.csproj"
+RUN dotnet restore "src/NET.Repository.Tests/NET.Repository.Tests.csproj"
 
 COPY . .
 
-RUN dotnet build "GenericRepository.Tests/GenericRepository.Tests.csproj" -c Release -o /app/build
+RUN dotnet build "src/NET.Repository.Tests/NET.Repository.Tests.csproj" -c Release -o /app/build
 
 FROM build AS test
 
@@ -17,4 +17,4 @@ WORKDIR /app
 
 COPY --from=build /app/build .
 
-ENTRYPOINT ["dotnet", "test", "GenericRepository.Tests.dll"]
+ENTRYPOINT ["dotnet", "test", "NET.Repository.Tests.dll"]

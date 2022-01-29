@@ -1,7 +1,7 @@
 using System;
 using System.Linq.Expressions;
 
-using NET.Repository.Logic;
+using NET.Repository.Full.Logic;
 using NET.Repository.Tests.Fakes.DTO;
 
 namespace NET.Repository.Tests.Fakes.Specifications

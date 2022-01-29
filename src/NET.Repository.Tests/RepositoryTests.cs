@@ -8,7 +8,7 @@ using Xunit;
 using NET.Repository.Application.Implementation;
 using NET.Repository.Tests.Fakes.DTO;
 using NET.Repository.Tests.Fakes.Specifications;
-using NET.Repository.Helpers.Utility;
+using NET.Repository.Full.Utility;
 using static NET.Repository.Tests.Utility.UnifiedMethods;
 
 #pragma warning disable xUnit1013

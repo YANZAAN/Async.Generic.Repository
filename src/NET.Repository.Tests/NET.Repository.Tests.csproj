@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>GenericRepository.Tests</RootNamespace>
+    <RootNamespace>NET.Repository.Tests</RootNamespace>
     <OutputType>Library</OutputType>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GenericRepository\GenericRepository.csproj" />
+    <ProjectReference Include="..\NET.Repository\NET.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,9 @@
-using System.Collections.Generic;
+using System;
 using System.Linq;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Moq;
-
 using NET.Repository.Tests.Fakes;
-using System;
-using System.Threading.Tasks;
 
 namespace NET.Repository.Tests.Utility
 {

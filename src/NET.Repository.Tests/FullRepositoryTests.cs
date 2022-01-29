@@ -1,16 +1,13 @@
 using System;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
-
-using NET.Repository.Application.Implementation;
 using NET.Repository.Tests.Fakes.DTO;
 using NET.Repository.Tests.Fakes.Specifications;
 using NET.Repository.Full.Utility;
-using static NET.Repository.Tests.Utility.UnifiedMethods;
 using NET.Repository.Full;
+using static NET.Repository.Tests.Utility.UnifiedMethods;
 
 #pragma warning disable xUnit1013
 

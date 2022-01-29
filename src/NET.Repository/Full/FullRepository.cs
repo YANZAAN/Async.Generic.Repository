@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Collections.Generic;
 
 using Microsoft.EntityFrameworkCore;
+
 using NET.Repository.Full.Logic;
 using NET.Repository.Full.Utility;
 
@@ -75,10 +76,7 @@ namespace NET.Repository.Full
 
         public void Insert(IEnumerable<T> entitiesToInsert)
         {
-            foreach (var entity in entitiesToInsert)
-            {
-                Insert(entity);
-            }
+            _set.AddRange(entitiesToInsert);
         }
 
         public void Delete(object id)

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 
-namespace GenericRepository.Tests.Fakes.DTO
+namespace NET.Repository.Tests.Fakes.DTO
 {
     public class Episode
     {

@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
 
-using GenericRepository.Application.Implementation;
-using GenericRepository.Tests.Fakes.DTO;
-using GenericRepository.Tests.Fakes.Specifications;
-using GenericRepository.Helpers.Utility;
-using static GenericRepository.Tests.Utility.UnifiedMethods;
+using NET.Repository.Application.Implementation;
+using NET.Repository.Tests.Fakes.DTO;
+using NET.Repository.Tests.Fakes.Specifications;
+using NET.Repository.Helpers.Utility;
+using static NET.Repository.Tests.Utility.UnifiedMethods;
 
 #pragma warning disable xUnit1013
 
-namespace GenericRepository.Tests
+namespace NET.Repository.Tests
 {
     public class RepositoryTests
     {

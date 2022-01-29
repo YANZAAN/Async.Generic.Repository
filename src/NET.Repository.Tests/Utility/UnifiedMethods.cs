@@ -3,11 +3,11 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 
-using GenericRepository.Tests.Fakes;
+using NET.Repository.Tests.Fakes;
 using System;
 using System.Threading.Tasks;
 
-namespace GenericRepository.Tests.Utility
+namespace NET.Repository.Tests.Utility
 {
     public static class UnifiedMethods
     {

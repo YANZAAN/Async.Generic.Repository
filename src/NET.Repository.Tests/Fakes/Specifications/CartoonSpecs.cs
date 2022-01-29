@@ -1,10 +1,10 @@
 using System;
 using System.Linq.Expressions;
 
-using GenericRepository.Logic;
-using GenericRepository.Tests.Fakes.DTO;
+using NET.Repository.Logic;
+using NET.Repository.Tests.Fakes.DTO;
 
-namespace GenericRepository.Tests.Fakes.Specifications
+namespace NET.Repository.Tests.Fakes.Specifications
 {
     public class CartoonIdEqualitySpecification : Specification<Cartoon>
     {

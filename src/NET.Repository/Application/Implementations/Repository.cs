@@ -5,11 +5,11 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-using GenericRepository.Application.Interfaces;
-using GenericRepository.Helpers.Utility;
-using GenericRepository.Logic;
+using NET.Repository.Application.Interfaces;
+using NET.Repository.Helpers.Utility;
+using NET.Repository.Logic;
 
-namespace GenericRepository.Application.Implementation
+namespace NET.Repository.Application.Implementation
 {
     /// <summary>
     /// <para>Asynchronous Generic Repository Implementation</para>

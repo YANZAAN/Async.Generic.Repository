@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-using GenericRepository.Helpers.Utility;
-using GenericRepository.Logic;
+using NET.Repository.Helpers.Utility;
+using NET.Repository.Logic;
 
-namespace GenericRepository.Application.Interfaces
+namespace NET.Repository.Application.Interfaces
 {
     /// <summary>
     /// <para>Interface for Asynchronous Generic Repository Pattern</para>

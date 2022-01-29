@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-using GenericRepository.Tests.Fakes.DTO;
+using NET.Repository.Tests.Fakes.DTO;
 
-namespace GenericRepository.Tests.Fakes
+namespace NET.Repository.Tests.Fakes
 {
     public class CartoonContext : DbContext
     {

@@ -24,13 +24,13 @@ namespace NET.Repository.Tests.Utility
             return dbSet;
         }
 
-        public static async Task<CartoonContext> GetDefaultCartoonContext() {
+        public static CartoonContext GetDefaultCartoonContext() {
             var options = new DbContextOptionsBuilder<CartoonContext>()
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
             var context = new CartoonContext(options);
-            await context.Database.EnsureCreatedAsync();
+            context.Database.EnsureCreated();
 
             return context;
         }
